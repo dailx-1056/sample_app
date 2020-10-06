@@ -1,0 +1,12 @@
+<% provide :title, "Micropost" %>
+<div class="center jumbotron">
+  <h1>Micropost</h1>
+  <div>
+    <ul class="list-group">
+      <% @microposts.each do |micropost| %>
+        <li class="list-group-item"><%= micropost %></li>
+      <% end %>
+    </ul>
+  </div>
+  <%= link_to "Sign up now!", "#", class: "btn btn-lg btn-primary" %>
+</div>
